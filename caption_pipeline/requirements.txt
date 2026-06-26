@@ -1,0 +1,12 @@
+# Caption pipeline (CRR) — tested with Python 3.10, CUDA 12.4
+# Install vLLM first following https://docs.vllm.ai/en/latest/getting_started/installation.html
+torch==2.6.0
+vllm==0.8.4
+transformers==4.52.0
+qwen-vl-utils
+librosa==0.11.0
+soundfile==0.13.1
+numpy>=2.0
+tqdm>=4.67
+pillow>=12.0
+regex>=2026.4

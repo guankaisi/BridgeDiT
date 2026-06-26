@@ -1,0 +1,10 @@
+requests
+torch==2.1.0
+torchaudio==2.1.0
+torchlibrosa==0.1.0
+torchvision==0.16.0
+tqdm==4.66.1
+transformers==4.34.0
+numpy==1.26.0
+laion_clap
+pyloudnorm

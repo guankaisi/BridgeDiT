@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+*.egg-info/
+.venv/
+*.ckpt
+*.safetensors
+*.mp4
+*.wav
+*.npy
+*.pkl
+wandb/
+logs/
+save_videos/
+models/
+*.timing.json
