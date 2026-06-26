@@ -1,4 +1,4 @@
-# Taming Text-to-Sounding Video Generation via Advanced Modality Condition and Interaction
+# BridgeDiT: Taming Text-to-Sounding Video Generation
 
 Official implementation of **Taming Text-to-Sounding Video Generation via Advanced Modality Condition and Interaction** (ECCV 2026).
 
