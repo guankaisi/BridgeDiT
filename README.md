@@ -2,32 +2,7 @@
 
 Official implementation of **Taming Text-to-Sounding Video Generation via Advanced Modality Condition and Interaction** (ECCV 2026).
 
-## Repository Structure
-
-```
-t2sv-release/
-├── caption_pipeline/          # CRR caption framework
-│   ├── crr.py                 # Cross-Referential Rewriter (main, paper method)
-│   ├── count.py               # CRR + per-stage timing benchmark
-│   ├── caption_pipeline.py    # Early baseline (simple rewrite)
-│   ├── vllm_utils.py          # vLLM tensor-parallel helper
-│   ├── examples/              # Sample inputs
-│   └── recaption/             # Caption JSON outputs
-├── bridgedit/                 # BridgeEdit model (train + infer + eval)
-│   ├── train_joint.py         # JointDiT_T2AV Lightning module
-│   ├── infer.py               # Single-sample inference CLI
-│   ├── main.py                # Training & batch inference entry points
-│   ├── config/                # YAML configs (train / sample / dataset)
-│   ├── dataset/               # VGGSound, AVSync, Landscape loaders
-│   ├── models/                # Wan video + Stable Audio + dual-stream DiT
-│   └── evaluation/            # FVD, FAD, CLAP, ImageBind, AVAlign, etc.
-└── scripts/
-    ├── download_models.sh
-    ├── run_crr_infer.sh
-    └── run_bridgedit_infer.sh
-```
-
----
+[[Paper](https://arxiv.org/pdf/2510.03117)] [[Demo page](https://bridgedit-t2sv.github.io/)] 
 
 ## Environment Setup
 
@@ -101,7 +76,6 @@ Update paths in `bridgedit/config/sample.yaml` only if you use a non-default `T2
 
 ## Quick Start
 
-Both pipelines were run successfully on **2025-06-26** with A100 80GB GPUs.
 
 ### A. CRR inference — user prompt → aligned captions
 
@@ -230,18 +204,6 @@ python main.py   # default: predict_avsync_parallel() — edit __main__ as neede
 
 ---
 
-## Multi-GPU Notes
-
-
-| Setting              | Env var                                    | Typical value                                |
-| -------------------- | ------------------------------------------ | -------------------------------------------- |
-| vLLM tensor parallel | `VLLM_TENSOR_PARALLEL_SIZE`                | `1` (7B, 1 GPU), `4` (72B VL), `8` (72B LLM) |
-| BridgeEdit inference | `CUDA_VISIBLE_DEVICES`                     | `0` (single sample)                          |
-| BridgeEdit training  | PyTorch Lightning `devices=8` in `main.py` | 8× GPU DDP                                   |
-
-
----
-
 ## Citation
 
 ```bibtex
@@ -255,9 +217,3 @@ python main.py   # default: predict_avsync_parallel() — edit __main__ as neede
       url={https://arxiv.org/abs/2510.03117}, 
 }
 ```
-
----
-
-## License
-
-Research code only. Pretrained backbones (Wan2.1, Stable Audio, Qwen) follow their respective licenses.
