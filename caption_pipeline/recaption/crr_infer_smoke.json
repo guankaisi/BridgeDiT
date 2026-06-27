@@ -1,0 +1,36 @@
+{
+    "demo_dog_bark": {
+        "user_prompt": "A German Shepherd barks alertly in a backyard beside a swimming pool.",
+        "semantic_anchors": {
+            "anchors": [
+                {
+                    "entity": "German Shepherd",
+                    "environment": "backyard beside a swimming pool",
+                    "action": "barks alertly",
+                    "sound": "loud bark"
+                }
+            ]
+        },
+        "semantic_anchors_raw": "{\n  \"anchors\": [\n    {\n      \"entity\": \"German Shepherd\",\n      \"environment\": \"backyard beside a swimming pool\",\n      \"action\": \"barks alertly\",\n      \"sound\": \"loud bark\"\n    }\n  ]\n}",
+        "crr_video_caption": "A German Shepherd stands alert in the backyard beside a sparkling swimming pool, its fur glistening under the sun's warm rays. The dog's ears perk up as it spots something out of the ordinary, and with a quick, powerful movement, it opens its mouth wide, revealing sharp teeth, and emits a sharp, urgent bark that echoes through the tranquil outdoor space.",
+        "crr_audio_caption": "A loud, resounding bark cuts through the serene backyard ambiance, its deep, commanding tone reverberating off the pool's surface and the surrounding landscape, drawing attention to the vigilant German Shepherd's sudden alertness.",
+        "crr_rewriter_raw": "CRR Video Caption: A German Shepherd stands alert in the backyard beside a sparkling swimming pool, its fur glistening under the sun's warm rays. The dog's ears perk up as it spots something out of the ordinary, and with a quick, powerful movement, it opens its mouth wide, revealing sharp teeth, and emits a sharp, urgent bark that echoes through the tranquil outdoor space.\n\nCRR Audio Caption: A loud, resounding bark cuts through the serene backyard ambiance, its deep, commanding tone reverberating off the pool's surface and the surrounding landscape, drawing attention to the vigilant German Shepherd's sudden alertness."
+    },
+    "demo_gun_shot": {
+        "user_prompt": "A hand cocks a flintlock pistol and fires it outdoors.",
+        "semantic_anchors": {
+            "anchors": [
+                {
+                    "entity": "flintlock pistol",
+                    "environment": "outdoors",
+                    "action": "cocks and fires",
+                    "sound": "loud report with smoke and sparks"
+                }
+            ]
+        },
+        "semantic_anchors_raw": "{\n  \"anchors\": [\n    {\n      \"entity\": \"flintlock pistol\",\n      \"environment\": \"outdoors\",\n      \"action\": \"cocks and fires\",\n      \"sound\": \"loud report with smoke and sparks\"\n    }\n  ]\n}",
+        "crr_video_caption": "A rugged flintlock pistol gleams under the sun's direct light, its polished surface catching the rays. The trigger guard is worn from years of use. The user grips the pistol firmly, then pulls back the hammer, a sharp click echoing as it locks into place. With a steady aim, the hammer is released, propelling a bullet forward and sending a burst of flame and smoke from the barrel, followed by a loud report that reverberates through the outdoors, mingling with the natural sounds of the environment.",
+        "crr_audio_caption": "A crisp, metallic click precedes a sudden, explosive crack that echoes through the open air. The sound is punctuated by the rush of hot, expanding gases and the hiss of escaping steam, accompanied by the faint, lingering smell of gunpowder. The report is followed by a cloud of acrid smoke that billows outward, carrying with it the sharp, metallic tang of the flintlock pistol's discharge.",
+        "crr_rewriter_raw": "CRR Video Caption: A rugged flintlock pistol gleams under the sun's direct light, its polished surface catching the rays. The trigger guard is worn from years of use. The user grips the pistol firmly, then pulls back the hammer, a sharp click echoing as it locks into place. With a steady aim, the hammer is released, propelling a bullet forward and sending a burst of flame and smoke from the barrel, followed by a loud report that reverberates through the outdoors, mingling with the natural sounds of the environment.\n\nCRR Audio Caption: A crisp, metallic click precedes a sudden, explosive crack that echoes through the open air. The sound is punctuated by the rush of hot, expanding gases and the hiss of escaping steam, accompanied by the faint, lingering smell of gunpowder. The report is followed by a cloud of acrid smoke that billows outward, carrying with it the sharp, metallic tang of the flintlock pistol's discharge."
+    }
+}

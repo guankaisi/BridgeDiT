@@ -1,0 +1,18 @@
+{
+  "video_raw_caption": {
+    "seconds": 4.054132144898176,
+    "n_samples": 1
+  },
+  "audio_raw_caption": {
+    "seconds": 2.3788804598152637,
+    "n_samples": 1
+  },
+  "semantic_checker": {
+    "seconds": 0.27618864364922047,
+    "n_samples": 1
+  },
+  "cross_modal_rewriter": {
+    "seconds": 1.3602235149592161,
+    "n_samples": 1
+  }
+}
