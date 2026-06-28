@@ -173,30 +173,6 @@ Training configs:
 | `config/train_large.yaml` | 14B / multi-node DeepSpeed  |
 | `config/sample.yaml`      | Inference sampling settings |
 
-
----
-
-## Evaluation
-
-Metrics live under `bridgedit/evaluation/`:
-
-
-| Metric           | Script                              |
-| ---------------- | ----------------------------------- |
-| FVD              | `eval_fvd.py`                       |
-| FAD              | `eval_fad.py`                       |
-| CLAP score       | `eval_clap.py`                      |
-| ImageBind (IB)   | `eval_ib_all.py`                    |
-| AVAlign / desync | `eval_avalign.py`, `eval_desync.py` |
-
-
-Batch evaluation on a benchmark:
-
-```bash
-cd bridgedit
-python main.py   # default: predict_avsync_parallel() — edit __main__ as needed
-```
-
 ---
 
 ## Citation
