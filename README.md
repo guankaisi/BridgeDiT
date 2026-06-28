@@ -36,11 +36,6 @@ Key packages: `torch==2.6.0`, `pytorch-lightning==2.5.5`, `deepspeed==0.18.1`, `
 
 Download weights into `./models` (or set a custom root):
 
-```bash
-export T2SV_MODEL_ROOT=./models   # default when unset: <repo>/models
-bash scripts/download_models.sh
-```
-
 `bridgedit/config/sample.yaml` already points to `../models/...` relative to the `bridgedit/` working directory. Caption scripts resolve model paths via `caption_pipeline/paths.py` using the same `T2SV_MODEL_ROOT`.
 
 ### Required backbones (BridgeEdit)
@@ -55,18 +50,18 @@ bash scripts/download_models.sh
 ### CRR caption models
 
 
-| Role                        | Paper (72B)               | Dev / smoke test (7B)    |
+| Role                        | huggingface-large         | huggingface-small        |
 | --------------------------- | ------------------------- | ------------------------ |
 | Video raw caption           | `Qwen2.5-VL-72B-Instruct` | `Qwen2.5-VL-7B-Instruct` |
 | Audio raw caption           | `Qwen2-Audio-7B-Instruct` | same                     |
 | Semantic Checker + Rewriter | `Qwen2.5-72B-Instruct`    | `Qwen2.5-7B-Instruct`    |
 
 
-Download with:
+Download our checkpoint with:
+| Role                        | huggingface                | 
+| --------------------------- | -------------------------  |
+| Our Chekckpoint             | `Guan123/BridgeDiT`|
 
-```bash
-bash scripts/download_models.sh
-```
 
 ### BridgeEdit fine-tuned checkpoints
 
