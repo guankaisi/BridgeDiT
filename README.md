@@ -4,6 +4,8 @@ Official implementation of **Taming Text-to-Sounding Video Generation via Advanc
 
 [[Paper](https://arxiv.org/pdf/2510.03117)] [[Demo page](https://bridgedit-t2sv.github.io/)] 
 
+![Teaser](./assets/teaser.pdf)
+
 ## Environment Setup
 
 Two separate conda environments are recommended:
